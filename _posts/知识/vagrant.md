@@ -27,8 +27,8 @@ title: vagrant
 
 [vagrant使用教程](https://github.com/astaxie/Go-in-Action/blob/master/ebook/zh/01.3.md)
 
-##vagrant错误处理
-###No guest additions
+## vagrant错误处理
+### No guest additions
     default: No guest additions were detected on the base box for this VM! Guest
     default: additions are required for forwarded ports, shared folders, host only
     default: networking, and more. If SSH fails on this machine, please install
