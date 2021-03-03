@@ -5,7 +5,7 @@ tags: linux
 title: CPU和内存的使用率算法
 ---
 [Linux平台Cpu使用率的计算](http://www.blogjava.net/fjzag/articles/317773.html)
-##总的Cpu使用率计算
+## 总的Cpu使用率计算
 
 计算方法：
  cpu使用信息
@@ -25,9 +25,9 @@ idle=第二次的第四列 - 第一次的第四列
 6、计算cpu使用率
 pcpu =100* (total-idle)/total
 
-##计算某个进程cpu和内存使用率
+## 计算某个进程cpu和内存使用率
 
-###内存使用率计算：
+### 内存使用率计算：
 
 总内存量：totalmem = meminfo中获取内存的总量MemTotal对应的值
 
@@ -37,7 +37,7 @@ Ps: (实际也可以在<pid>/statm中获取，但里面是页数，要乘以每�
 
 内存使用率：pmem = processmem/totalmem * 100%;
 
-###cpu使用率计算：
+### cpu使用率计算：
 [proc/pid/stat文件解析](http://blog.jbface.com/post/linux/proc-pid-statwen-jian-jie-shi)
 cpu总的使用时长: totalcpu1 = stat文件第一行数字总和，里面是各种时间，user + nice + system + idle + iowait + irq + softirq + stealstolen + guest
 
