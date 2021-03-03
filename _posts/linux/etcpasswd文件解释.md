@@ -5,7 +5,7 @@ tags: linux
 title: 'etc passwd文件解释'
 ---
 
-cat /etc/passwd
+`cat /etc/passwd`
 
         root:x:0:0:root:/root:/bin/bash 
     
