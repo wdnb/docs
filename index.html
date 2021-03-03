@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -8,60 +9,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
   <div id="app"></div>
+  <!-- docsify-edit-on-github -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
+
+
   <script>
     window.$docsify = {
       name: '',
       repo: '',
-	  loadSidebar: true,
-	  alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
       },
-	  subMaxLevel: 3,
-	  sidebarDisplayLevel: 1,
-	  
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1,
 
-    // 完整配置参数
-    search: {
-      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-      paths: 'auto', // or 'auto'
-      placeholder: 'Type to search',
-
-      // 支持本地化
-      placeholder: {
-        '/zh-cn/': '搜索',
-        '/': 'Type to search'
+      // docsify-copy-code (defaults)
+      copyCode: {
+        buttonText: 'Copy to clipboard',
+        errorText: 'Error',
+        successText: 'Copied'
       },
 
-      noData: 'No Results!',
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/wdnb/docs/blob/main/',
+          null,
+          function (file) {
+            if (file.indexOf('en') === -1) {
+              return '编辑'
+            } else {
+              return 'edit on git'
+            }
+          }
+        )
 
-      // 支持本地化
-      noData: {
-        '/zh-cn/': '找不到结果',
-        '/': 'No Results'
-      },
+      ],
 
-      // 搜索标题的最大层级, 1 - 6
-      depth: 6,
 
-      hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+      // search 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: 'Type to search',
 
-      // 避免搜索索引冲突
-      // 同一域下的多个网站之间
-      namespace: 'website-1',
+        // 支持本地化
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
 
-      // 使用不同的索引作为路径前缀（namespaces）
-      // 注意：仅适用于 paths: 'auto' 模式
-      //
-      // 初始化索引时，我们从侧边栏查找第一个路径
-      // 如果它与列表中的前缀匹配，我们将切换到相应的索引
-      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+        noData: 'No Results!',
 
-      // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
-      // 匹配到的字符串将被用来识别索引
-      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
-    }
+        // 支持本地化
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+
+        // 搜索标题的最大层级, 1 - 6
+        depth: 6,
+
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+
+        // 避免搜索索引冲突
+        // 同一域下的多个网站之间
+        namespace: 'website-1',
+
+        // 使用不同的索引作为路径前缀（namespaces）
+        // 注意：仅适用于 paths: 'auto' 模式
+        //
+        // 初始化索引时，我们从侧边栏查找第一个路径
+        // 如果它与列表中的前缀匹配，我们将切换到相应的索引
+        pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+        // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
+        // 匹配到的字符串将被用来识别索引
+        pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+      }
     }
   </script>
   <!-- Docsify v4 -->
@@ -70,17 +99,29 @@
   <!-- sidebar -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <!-- search -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> 
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- 代码高亮 -->
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <!-- Click to copy -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+  <!-- zooming images -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- emoji -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- Pagination -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
   <!-- css -->
-	<style type="text/css">
-	  body {
-		overflow: auto !important;
-	  }
-	</style>
+  <style type="text/css">
+    body {
+      overflow: auto !important;
+    }
+  </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 
 </body>
+
 </html>
