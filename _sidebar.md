@@ -29,7 +29,7 @@
 	- [samba服务配置](_posts/linux/linux软件安装/samba服务配置.md)	
 	- [sftp服务器配置](_posts/linux/linux软件安装/sftp服务器配置.md)	
 	- [自行编译GCC](_posts/linux/linux软件安装/自行编译GCC.md)		
-	- [supervisor](_posts/linux/linux软件安装/supervisor.md)	
+	- [supervisor配置](_posts/linux/linux软件安装/supervisor配置.md)	
 - mysql
   - [mariadb安装](_posts/mysql/mariadb安装.md)
   - [mariadb配置](_posts/mysql/mariadb配置.md)
