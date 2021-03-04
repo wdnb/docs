@@ -10,7 +10,7 @@ http://supervisord.org/installing.html#installing-to-a-system-with-internet-acce
 配置
 http://supervisord.org/installing.html#creating-a-configuration-file
 
-4. Surpervisor的启动
+4. supervisor的启动
 # supervisord二进制启动
 supervisord -c /home/g4aaaaz/mywork/go/supervisord.conf
 # 检查进程
