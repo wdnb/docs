@@ -2,19 +2,28 @@
 date: 2021-03-04 16:32
 ---
 
-pip安装
-how-to-install-pip-on-centos-7.note
+## nodejs
 
-安装
-http://supervisord.org/installing.html#installing-to-a-system-with-internet-access
-配置
-http://supervisord.org/installing.html#creating-a-configuration-file
+> https://github.com/nodejs/help/wiki/Installation
 
-4. supervisor的启动
-# supervisord二进制启动
-supervisord -c /home/g4aaaaz/mywork/go/supervisord.conf
-# 检查进程
-ps aux | grep supervisord
+## how-to-install-pip-on-centos-7
+
+> https://linuxize.com/post/how-to-install-pip-on-centos-7/
+
+## 安装
+ 
+> http://supervisord.org/installing.html#installing-to-a-system-with-internet-access
+
+## 配置
+
+> http://supervisord.org/installing.html#creating-a-configuration-file
+
+### supervisor的启动
+#### supervisord二进制启动
+```supervisord -c /home/g4aaaaz/mywork/go/supervisord.conf```
+#### 检查进程
+
+`ps aux | grep supervisord`
 
 
 
@@ -22,8 +31,10 @@ ps aux | grep supervisord
 停止全部进程
 /usr/bin/supervisorctl stop all
 杀死程序
-ps aux | grep supervisord
-kill id
+
+  ps aux | grep supervisord
+  kill id
+  
 一、添加好配置文件后
 二、更新新的配置到supervisord    
 supervisorctl update
