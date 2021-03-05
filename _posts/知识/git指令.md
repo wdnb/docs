@@ -170,31 +170,34 @@ find . -type f -exec dos2unix {} +
 
 
 Username for 'https://github.com':
+```git remote set-url origin git+ssh://git@github.com/username/reponame.git```
 
-git remote set-url origin git+ssh://git@github.com/username/reponame.git
-
-Git pull 强制覆盖本地文件
+## Git pull 强制覆盖本地文件
 拉取所有更新不同步
-git fetch --all
+```git fetch --all```
 本地代码同步线上最新版本
-git reset --hard origin/master
-//git pull
+```git reset --hard origin/master```
 
-本地分支重命名
+## 本地分支重命名
+
 如果目标分支不是当前分支，可以使用下面代码：
-git branch -m 原分支名 新分支名
+
+```git branch -m 原分支名 新分支名```
+
 如果是当前分支，那么可以使用加上新名字
-git branch -m 原分支名称
 
-关联本地分支到远程分支
-git branch -u origin/feature/DACHU-act05 feature/DACHU-act05
+```git branch -m 原分支名称```
 
-切换ssh和http协议
-查看当前remote
-git remote -v
-origin  git@gitlab.go-goal.cn:mis/mxxmsg.git (fetch)
-origin  git@gitlab.go-goal.cn:mis/mxxg.git (push)
-从http和ssh互相切换
- git remote set-url origin url.git
+## 关联本地分支到远程分支
+
+```git branch -u origin/feature/DACHU-act05 feature/DACHU-act05```
+
+## 切换ssh和http协议
+### 查看当前remote
+```git remote -v```
+```origin  git@gitlab.go-goal.cn:mis/mxxmsg.git (fetch)```
+```origin  git@gitlab.go-goal.cn:mis/mxxg.git (push)```
+### 从http和ssh互相切换
+```git remote set-url origin url.git```
 
 
