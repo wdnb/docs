@@ -112,13 +112,15 @@ git show 30414f610826486efa8ce8b6303f51817c4e79d9
 参数 -m 就是指定要撤销的那个提价，从左往右，从1开始数
 
 ```
-git revert 30414f610826486efa8ce8b6303f51817c4e79d9 -m 1 撤销145ae2613分支带来的改动
+git revert 30414f610826486efa8ce8b6303f51817c4e79d9 -m 1 
 ```
+撤销145ae2613分支带来的改动
 
 
 
 ## 回退到指定commit
 
+```
 git reset --hard xxx(
 --hard 删除工作空间改动代码，撤销commit，撤销git add . 
 注意完成这个操作后，就恢复到了上一次的commit状态
@@ -126,6 +128,7 @@ git reset --hard xxx(
 这个为默认参数,git reset --mixed HEAD^ 和 git reset HEAD^ 效果是一样的
 --soft 不删除工作空间改动代码，撤销commit，不撤销git add .
  )
+ ```
 
 ## 删除未跟踪文件
 ```
