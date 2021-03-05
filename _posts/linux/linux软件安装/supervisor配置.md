@@ -20,7 +20,11 @@ date: 2021-03-04 16:32
 
 ### supervisor的启动
 #### supervisord二进制启动
-```supervisord -c /home/g4aaaaz/mywork/go/supervisord.conf```
+
+```
+supervisord -c /home/g4aaaaz/mywork/go/supervisord.conf
+```
+
 #### 检查进程
 
 `ps aux | grep supervisord`
