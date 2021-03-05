@@ -96,16 +96,20 @@ git merge master
 回退指定commt（merge）
 分2种情况,当revert合并节点的commit的时候 会提示需要-m参数
 
-使用git show 30414f610826486efa8ce8b6303f51817c4e79d9能看到 merge栏有 145ae2613 9bc158141 2个commit id, 
+使用
+```
+git show 30414f610826486efa8ce8b6303f51817c4e79d9
+```
+能看到 merge栏有 145ae2613 9bc158141 2个commit id, 
 
-commit 30414f610826486efa8ce8b6303f51817c4e79d9
-Merge: 145ae2613 9bc158141
-Author: wangyi <wangyi@lanqb.cn>
-Date:   Fri Oct 9 15:54:04 2020 +0800
+    commit 30414f610826486efa8ce8b6303f51817c4e79d9
+    Merge: 145ae2613 9bc158141
+    Author: wangyi <wangyi@lanqb.cn>
+    Date:   Fri Oct 9 15:54:04 2020 +0800
 
-    同步私有化项目和原项目代码
+## 同步私有化项目和原项目代码
 
-#参数 -m 就是指定要撤销的那个提价，从左往右，从1开始数
+参数 -m 就是指定要撤销的那个提价，从左往右，从1开始数
 
 ```
 git revert 30414f610826486efa8ce8b6303f51817c4e79d9 -m 1 撤销145ae2613分支带来的改动
