@@ -1,12 +1,20 @@
 * [简介](/)
-- c嵌入式
-  - [c语言基础](_posts/c嵌入式/c语言基础.md)
-  - [EmbedSky交叉编译](_posts/c嵌入式/EmbedSky交叉编译.md)
 - 宠物
   - [豹纹守宫饲养指南](_posts/宠物/豹纹守宫饲养指南.md)  
-- hexo
-  - [hexo搭建笔记](_posts/hexo/hexo搭建笔记.md)
-  - [hexo通过GitHub-Pages建立站点](_posts/hexo/hexo通过GitHub-Pages建立站点.md)
+ - k3s
+      - [k3s配置](_posts/k3s/k3s配置.md)
+	  - [树莓派k3s安装rancher](_posts/k3s/树莓派k3s安装rancher.md)
+	  - [树莓派部署k3s](_posts/k3s/树莓派部署k3s.md)
+	  - [在 GitLab 项目中使用 k3s Kubernetes 集群](_posts/k3s/在GitLab项目中使用k3s__Kubernetes集群.md)  
+  - gitlab
+      - [gitlab和gitlab-runner配置 https 自签证书](_posts/gitlab/gitlab和gitlab-runner配置https自签证书.md)
+	  - [gitlab配置](_posts/gitlab/gitlab配置.md)
+	  - [使用GitLabCi 自动部署Hexo到GitHub](_posts/gitlab/使用GitLabCi自动部署Hexo到GitHub.md)
+	  - [树莓派armdocker部署gitlabgitlab-runner](_posts/gitlab/树莓派armdocker部署gitlabgitlab-runner.md)     
+- 树莓派
+  - [树莓派配置](_posts/树莓派/树莓派配置.md)
+  - [docker配置](_posts/树莓派/docker配置.md)  
+  - [树莓派安装方法](_posts/树莓派/树莓派安装方法.md)     
 - linux
   - linux配置
     - [centos iptables firewalld 开放端口](_posts/linux/centosiptablesfirewalld开放端口.md)
@@ -35,7 +43,14 @@
   - [mariadb配置](_posts/mysql/mariadb配置.md)
   - [mysql基本操作](_posts/mysql/mysql基本操作.md)
   - [mysql建数据库](_posts/mysql/mysql建数据库.md)
-  - [mysql允许null与default值](_posts/mysql/mysql允许null与default值.md)
+  - [mysql允许null与default值](_posts/mysql/mysql允许null与default值.md)  
+- blockchain
+  - [note](_posts/blockchain/note.md)  
+- 智能合约
+  - [合约审计](_posts/智能合约/合约审计.md)  
+- hexo
+  - [hexo搭建笔记](_posts/hexo/hexo搭建笔记.md)
+  - [hexo通过GitHub-Pages建立站点](_posts/hexo/hexo通过GitHub-Pages建立站点.md)
 - ssh
   - [SSH端口转发（内网反向链接）](_posts/ssh/SSH端口转发（内网反向链接）.md)
   - [ssh密钥](_posts/ssh/ssh密钥.md)
@@ -55,19 +70,6 @@
 - 架构师学习笔记
   - [UML学习笔记](_posts/架构师学习笔记/UML学习笔记.md)  
   - [食堂就餐卡系统设计](_posts/架构师学习笔记/食堂就餐卡系统设计.md)    
-- 树莓派
-  - [树莓派配置](_posts/树莓派/树莓派配置.md)
-  - [docker配置](_posts/树莓派/docker配置.md)
-  - k3s
-      - [k3s配置](_posts/树莓派/k3s/k3s配置.md)
-	  - [树莓派k3s安装rancher](_posts/树莓派/k3s/树莓派k3s安装rancher.md)
-	  - [树莓派部署k3s](_posts/树莓派/k3s/树莓派部署k3s.md)
-	  - [在 GitLab 项目中使用 k3s Kubernetes 集群](_posts/树莓派/k3s/在GitLab项目中使用k3s__Kubernetes集群.md)
-  - gitlab
-      - [gitlab和gitlab-runner配置 https 自签证书](_posts/树莓派/gitlab/gitlab和gitlab-runner配置https自签证书.md)
-	  - [gitlab配置](_posts/树莓派/gitlab/gitlab配置.md)
-	  - [使用GitLabCi 自动部署Hexo到GitHub](_posts/树莓派/gitlab/使用GitLabCi自动部署Hexo到GitHub.md)
-	  - [树莓派armdocker部署gitlabgitlab-runner](_posts/树莓派/gitlab/树莓派armdocker部署gitlabgitlab-runner.md)  
 - 随笔
   - [games](_posts/随笔/games.md)    
   - [movies](_posts/随笔/movies.md)   
@@ -75,7 +77,6 @@
   - [从bitcron连夜逃回hexo](_posts/随笔/从bitcron连夜逃回hexo.md)   
   - [几个一本正经活说八道的冷笑话...](_posts/随笔/几个一本正经活说八道的冷笑话....md)   
   - [人生的真谛](_posts/随笔/人生的真谛.md)   
-  - [树莓派安装方法](_posts/随笔/树莓派安装方法.md)     
 - 知识
   - [centos安装nodejs](_posts/知识/centos安装nodejs.md)
   - [git指令](_posts/知识/git指令.md)
@@ -84,3 +85,6 @@
   - [正则](_posts/知识/正则.md)
   - [证书格式转换](_posts/知识/证书格式转换.md)
   - [证书链验证方法](_posts/知识/证书链验证方法.md)
+- c嵌入式
+  - [c语言基础](_posts/c嵌入式/c语言基础.md)
+  - [EmbedSky交叉编译](_posts/c嵌入式/EmbedSky交叉编译.md)
