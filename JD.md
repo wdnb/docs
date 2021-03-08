@@ -5,7 +5,7 @@
 ## 个人信息 
 
 * 性 别：男&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;生日：1992-11  
-* 手 机：13646815243&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;邮 箱：4aaaaz@gmail.com    
+* 手 机：&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;邮 箱：@gmail.com    
 * 专 业：计算机应用&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 岗 位：PHP程序员
 
 ## 工作经历
